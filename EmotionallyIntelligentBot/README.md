@@ -1,4 +1,4 @@
-﻿# EmotionallyIntelligentBot
+﻿# Emotionally Intelligent Bot
 
 Bot Framework v4 bot sample with Opinion Mining capabilities.
 
