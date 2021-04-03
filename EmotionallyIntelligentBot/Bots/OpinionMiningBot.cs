@@ -3,15 +3,14 @@
 //
 // Generated with Bot Builder V4 SDK Template for Visual Studio EchoBot v4.12.2
 
+using Azure;
+using Azure.AI.TextAnalytics;
+using Microsoft.Bot.Builder;
+using Microsoft.Bot.Schema;
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.Bot.Builder;
-using Microsoft.Bot.Schema;
-using Azure;
-using System.Globalization;
-using Azure.AI.TextAnalytics;
-using System;
 
 namespace EmotionallyIntelligentBot.Bots
 {
@@ -61,7 +60,6 @@ namespace EmotionallyIntelligentBot.Bots
                     }
                 }
             }
-
         }
 
         protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
