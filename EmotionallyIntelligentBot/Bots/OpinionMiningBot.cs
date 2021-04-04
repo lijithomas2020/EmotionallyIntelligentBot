@@ -16,8 +16,8 @@ namespace EmotionallyIntelligentBot.Bots
 {
     public class OpinionMiningBot : ActivityHandler
     {
-        private static readonly AzureKeyCredential credentials = new AzureKeyCredential("ADD_YOUR_KEY_HERE");
-        private static readonly Uri endpoint = new Uri("ADD_YOUR_URI_HERE");
+        private static readonly AzureKeyCredential credentials = new AzureKeyCredential("ADD_YOUR_TEXT_ANALYTICS_KEY_HERE");
+        private static readonly Uri endpoint = new Uri("ADD_YOUR_TEXT_ANALYTICS_ENDPOINT_HERE");
         protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
         {
             var client = new TextAnalyticsClient(endpoint, credentials);
